@@ -384,6 +384,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  appearance: button; /* Propiedad estándar para compatibilidad con otros navegadores */
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -442,6 +443,7 @@ legend + * {
 [type=search] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
+  appearance: textfield;
 }
 
 /* rtl:raw:
@@ -463,6 +465,7 @@ legend + * {
 ::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
+  appearance: button;
 }
 
 output {
@@ -10844,4 +10847,11 @@ textarea.form-control-lg {
   .header-background {
       background-attachment: fixed; /* Esto mantiene la imagen en su lugar mientras se hace scroll */
   }
+}
+
+.bg-hero{
+  background-color: gray;
+  opacity: 0.8;
+  border-radius: 10px;
+  margin: 10px;
 }
