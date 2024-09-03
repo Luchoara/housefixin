@@ -12837,3 +12837,17 @@ fieldset:disabled .btn {
 }
 
 /* End Navbar Responsive */
+
+/* Contenedor principal */
+.container-max-width {
+  max-width: 1200px; /* Puedes ajustar este valor según lo que necesites */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Para pantallas muy grandes */
+@media (min-width: 1480px) {
+  .container-max-width {
+    max-width: 1400px; /* Ajusta el valor para pantallas grandes */
+  }
+}
