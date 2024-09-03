@@ -12664,14 +12664,22 @@ fieldset:disabled .btn {
 /* Windows Options*/
 
 .container h1 {
-  font-family: inherit; /* Utiliza la tipografía predeterminada del template */
-  font-size: 2.5rem; /* Tamaño de fuente más grande */
-  font-weight: 700; /* Negrita para mayor énfasis */
-  text-align: center; /* Centrar el texto */
-  color: #343a40; /* Color oscuro estándar de Bootstrap */
-  margin-bottom: 1.5rem; /* Espacio inferior para separar del contenido siguiente */
-  text-transform: uppercase; /* Convertir el texto a mayúsculas */
-  letter-spacing: 0.05em; /* Espaciado entre letras para un toque estilizado */
+  font-family: inherit;
+  /* Utiliza la tipografía predeterminada del template */
+  font-size: 2.5rem;
+  /* Tamaño de fuente más grande */
+  font-weight: 700;
+  /* Negrita para mayor énfasis */
+  text-align: center;
+  /* Centrar el texto */
+  color: #343a40;
+  /* Color oscuro estándar de Bootstrap */
+  margin-bottom: 1.5rem;
+  /* Espacio inferior para separar del contenido siguiente */
+  text-transform: uppercase;
+  /* Convertir el texto a mayúsculas */
+  letter-spacing: 0.05em;
+  /* Espaciado entre letras para un toque estilizado */
 }
 
 
@@ -12680,18 +12688,23 @@ fieldset:disabled .btn {
 .window-options {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centra las opciones en la pantalla */
-  gap: 20px; /* Añade un espacio consistente entre los elementos */
-  padding: 20px; /* Añade relleno para asegurar que las opciones no queden pegadas al borde */
+  justify-content: center;
+  /* Centra las opciones en la pantalla */
+  gap: 20px;
+  /* Añade un espacio consistente entre los elementos */
+  padding: 20px;
+  /* Añade relleno para asegurar que las opciones no queden pegadas al borde */
 }
 
 .window-option {
-  flex: 1 1 calc(33.333% - 40px); /* Tres elementos por fila con márgenes */
+  flex: 1 1 calc(33.333% - 40px);
+  /* Tres elementos por fila con márgenes */
   background-color: #eaeaea;
   border-radius: 8px;
   margin: 10px;
   padding: 20px;
-  max-width: 400px; /* Limita el ancho máximo para evitar que los elementos se hagan demasiado grandes */
+  max-width: 400px;
+  /* Limita el ancho máximo para evitar que los elementos se hagan demasiado grandes */
   text-align: center;
   transition: transform 0.3s;
 }
@@ -12718,35 +12731,43 @@ fieldset:disabled .btn {
 /* Pantallas medianas (ej. pantallas de 13") */
 @media (min-width: 768px) {
   .window-option {
-    flex: 1 1 calc(45% - 40px); /* Ajusta el ancho para que dos elementos se alineen en filas */
+    flex: 1 1 calc(45% - 40px);
+    /* Ajusta el ancho para que dos elementos se alineen en filas */
   }
 
   .window-option p {
-    font-size: 15px; /* Ajuste del tamaño del texto para mejorar la legibilidad */
+    font-size: 15px;
+    /* Ajuste del tamaño del texto para mejorar la legibilidad */
   }
 }
 
 /* Pantallas grandes (ej. pantallas de 22") */
 @media (min-width: 1200px) {
   .window-option {
-    flex: 1 1 calc(30% - 40px); /* Tres elementos por fila */
-    margin: 15px; /* Mantiene el margen reducido */
+    flex: 1 1 calc(30% - 40px);
+    /* Tres elementos por fila */
+    margin: 15px;
+    /* Mantiene el margen reducido */
   }
 
   .window-option p {
-    font-size: 16px; /* Ajuste del tamaño del texto para pantallas más grandes */
+    font-size: 16px;
+    /* Ajuste del tamaño del texto para pantallas más grandes */
   }
 }
 
 /* Pantallas muy grandes (más de 1500px) */
 @media (min-width: 1500px) {
   .window-option {
-    flex: 1 1 calc(25% - 40px); /* Cuatro elementos por fila */
-    margin: 20px; /* Aumenta el margen para dar más espacio entre los elementos */
+    flex: 1 1 calc(25% - 40px);
+    /* Cuatro elementos por fila */
+    margin: 20px;
+    /* Aumenta el margen para dar más espacio entre los elementos */
   }
 
   .window-option p {
-    font-size: 18px; /* Ajuste del tamaño del texto para pantallas muy grandes */
+    font-size: 18px;
+    /* Ajuste del tamaño del texto para pantallas muy grandes */
   }
 }
 
