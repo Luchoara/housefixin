@@ -12662,6 +12662,21 @@ fieldset:disabled .btn {
 }
 
 /* Windows Options*/
+
+.container h1 {
+  font-family: inherit; /* Utiliza la tipografía predeterminada del template */
+  font-size: 2.5rem; /* Tamaño de fuente más grande */
+  font-weight: 700; /* Negrita para mayor énfasis */
+  text-align: center; /* Centrar el texto */
+  color: #343a40; /* Color oscuro estándar de Bootstrap */
+  margin-bottom: 1.5rem; /* Espacio inferior para separar del contenido siguiente */
+  text-transform: uppercase; /* Convertir el texto a mayúsculas */
+  letter-spacing: 0.05em; /* Espaciado entre letras para un toque estilizado */
+}
+
+
+
+
 .window-options {
   display: flex;
   flex-wrap: wrap;
