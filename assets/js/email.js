@@ -1,34 +1,32 @@
-document
-.getElementById("contact-form")
-.addEventListener("submit", function (event) {
-  event.preventDefault(); // Evitar el envío predeterminado del formulario
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent default form submission
 
-  // Aquí obtendrás los valores de los campos del formulario
+  // Capture form data
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const phone = document.getElementById("phone").value;
   const service_type = document.getElementById("service_type").value;
   const leadid_token = document.getElementById("leadid_token").value;
 
-  // Configuración del template params para EmailJS
+  // EmailJS template parameters
   const templateParams = {
     name: name,
     email: email,
     phone: phone,
     service_type: service_type,
-    leadid_token:leadid_token,
+    leadid_token: leadid_token, // Capture Jornaya lead ID
   };
 
-  // Enviar email usando EmailJS
+  // Send email via EmailJS
   emailjs.send("service_5pf0e4k", "template_pr0w2se", templateParams).then(
     function (response) {
       console.log("SUCCESS!", response.status, response.text);
-      alert("Sent!");
-      document.getElementById("contact-form").reset(); // Limpiar el formulario
+      alert("Form submitted successfully!");
+      document.getElementById("contact-form").reset(); // Reset form
     },
     function (error) {
       console.log("FAILED...", error);
-      alert("Something wrong happend!");;
+      alert("Submission failed, please try again.");
     }
   );
 });
